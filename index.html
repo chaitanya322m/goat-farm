@@ -2,323 +2,918 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Smart Goat Farm</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
 
-    <header class="navbar">
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
 
-        <div class="logo">
-            🐐 Smart Goat Farm
-        </div>
+<header class="navbar">
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#selling">Selling</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <div class="logo">
+        🐐 Smart Goat Farm
+    </div>
 
-    </header>
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
 
 
-    <!-- ================= HOME ================= -->
 
-    <section class="hero" id="home">
+<!-- =====================================================
+     HOME
+===================================================== -->
 
-        <div class="hero-content">
+<section class="hero" id="home">
 
-            <p class="small-title">
-                WELCOME TO SMART GOAT FARM
-            </p>
+    <div class="hero-content">
 
-            <h1>
-                Modern Goat Farming Made Simple
-            </h1>
+        <p class="small-title">
+            WELCOME TO SMART GOAT FARM
+        </p>
 
-            <p>
-                Learn everything about goat farming — from buying
-                healthy goats to feeding, breeding, health care
-                and selling.
-            </p>
+        <h1>
+            Modern Goat Farming Made Simple 🐐
+        </h1>
 
-            <p class="hero-text">
-                Learn about goat breeds, farm management,
-                nutrition, healthcare and goat selling.
-            </p>
+        <p class="hero-subtitle">
+            Learn, manage and grow your goat farming business.
+        </p>
+
+        <p class="hero-text">
+
+            Explore goat breeds, buying, feeding,
+            healthcare, farm sheds and selling.
+
+        </p>
+
+        <div class="hero-buttons">
 
             <a href="#services" class="main-btn">
-                Explore Farm
+                Explore Farming
             </a>
 
-            <a href="#about" class="secondary-btn">
-                Learn More
+            <a href="#contact" class="secondary-btn">
+                Contact Us
             </a>
 
         </div>
 
+    </div>
 
-        <div class="hero-goat">
+
+    <div class="hero-goat">
+
+        🐐
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about" id="about">
+
+    <p class="small-title">
+        ABOUT US
+    </p>
+
+    <h2>
+        About Goat Farming
+    </h2>
+
+    <p class="about-text">
+
+        Successful goat farming requires proper planning,
+        healthy animals, suitable housing, balanced feeding,
+        regular care and good farm management.
+
+        Smart Goat Farm provides simple information
+        to help farmers understand the complete process.
+
+    </p>
+
+
+    <div class="about-cards">
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                🐐
+            </div>
+
+            <h3>
+                Healthy Goats
+            </h3>
+
+            <p>
+                Learn how to identify and manage healthy goats.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                🌱
+            </div>
+
+            <h3>
+                Proper Nutrition
+            </h3>
+
+            <p>
+                Understand fodder, feed, minerals and water.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                📈
+            </div>
+
+            <h3>
+                Smart Management
+            </h3>
+
+            <p>
+                Better planning can help improve farm management.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services" id="services">
+
+    <p class="small-title">
+        EXPLORE
+    </p>
+
+    <h2>
+        Goat Farming Services
+    </h2>
+
+    <p class="services-intro">
+
+        👆 Touch any card to explore detailed information.
+
+    </p>
+
+
+    <div class="service-cards">
+
+
+        <!-- GOAT BREEDS -->
+
+        <button class="service-card"
+                onclick="openModal('breedsModal')">
+
+            <div class="service-icon">
+                🐐
+            </div>
+
+            <h3>
+                Goat Breeds
+            </h3>
+
+            <p>
+                Learn about different goat breeds
+                and their characteristics.
+            </p>
+
+            <span class="card-link">
+                View Details →
+            </span>
+
+        </button>
+
+
+
+        <!-- BUYING GOATS -->
+
+        <button class="service-card"
+                onclick="openModal('buyingModal')">
+
+            <div class="service-icon">
+                🛒
+            </div>
+
+            <h3>
+                Buying Goats
+            </h3>
+
+            <p>
+                Learn how to select healthy goats
+                before purchasing.
+            </p>
+
+            <span class="card-link">
+                View Details →
+            </span>
+
+        </button>
+
+
+
+        <!-- FEED -->
+
+        <button class="service-card"
+                onclick="openModal('feedModal')">
+
+            <div class="service-icon">
+                🌱
+            </div>
+
+            <h3>
+                Feed & Nutrition
+            </h3>
+
+            <p>
+                Understand fodder, feed, minerals
+                and clean water.
+            </p>
+
+            <span class="card-link">
+                View Details →
+            </span>
+
+        </button>
+
+
+
+        <!-- HEALTH -->
+
+        <button class="service-card"
+                onclick="openModal('healthModal')">
+
+            <div class="service-icon">
+                ❤️
+            </div>
+
+            <h3>
+                Health Care
+            </h3>
+
+            <p>
+                Learn basic goat health management
+                and veterinary care.
+            </p>
+
+            <span class="card-link">
+                View Details →
+            </span>
+
+        </button>
+
+
+
+        <!-- FARM -->
+
+        <button class="service-card"
+                onclick="openModal('farmModal')">
+
+            <div class="service-icon">
+                🏠
+            </div>
+
+            <h3>
+                Farm & Shed
+            </h3>
+
+            <p>
+                Learn about shed design, cleanliness
+                and ventilation.
+            </p>
+
+            <span class="card-link">
+                View Details →
+            </span>
+
+        </button>
+
+
+
+        <!-- SELLING -->
+
+        <button class="service-card"
+                onclick="openModal('sellingModal')">
+
+            <div class="service-icon">
+                💰
+            </div>
+
+            <h3>
+                Selling Goats
+            </h3>
+
+            <p>
+                View available goats, prices
+                and selling information.
+            </p>
+
+            <span class="card-link">
+                View Goats →
+            </span>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GOAT BREEDS MODAL
+===================================================== -->
+
+<div class="modal" id="breedsModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn"
+                onclick="closeModal('breedsModal')">
+            ×
+        </button>
+
+        <div class="modal-icon">
             🐐
         </div>
 
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="about" id="about">
-
-        <p class="small-title">
-            ABOUT GOAT FARMING
-        </p>
-
         <h2>
-            About Goat Farming
+            Goat Breeds
         </h2>
 
-        <p class="about-text">
-            Goat farming can be managed successfully with proper
-            knowledge of breeds, feeding, housing, health,
-            breeding and farm management.
+        <p>
+            Different breeds can have different
+            characteristics, growth patterns and
+            farming purposes.
         </p>
 
 
-        <div class="about-cards">
+        <div class="detail-grid">
 
-            <div class="about-card">
+            <div class="detail-box">
 
-                <span>🐐</span>
-
-                <h3>
-                    Healthy Goats
-                </h3>
+                <h3>🐐 Osmanabadi</h3>
 
                 <p>
-                    Focus on healthy and quality goats
-                    for better farming.
+                    A well-known Indian goat breed.
+                    It is commonly raised for meat
+                    production.
                 </p>
 
             </div>
 
 
-            <div class="about-card">
+            <div class="detail-box">
 
-                <span>🌱</span>
-
-                <h3>
-                    Good Nutrition
-                </h3>
+                <h3>🐐 Beetal</h3>
 
                 <p>
-                    Proper fodder, feed, minerals
-                    and clean water.
+                    A large Indian goat breed known
+                    for its useful production characteristics.
                 </p>
 
             </div>
 
 
-            <div class="about-card">
+            <div class="detail-box">
 
-                <span>📈</span>
-
-                <h3>
-                    Better Management
-                </h3>
+                <h3>🐐 Sirohi</h3>
 
                 <p>
-                    Smart farm management can help
-                    improve productivity.
+                    An Indian breed commonly raised
+                    in several parts of the country.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>🐐 Jamunapari</h3>
+
+                <p>
+                    A distinctive Indian breed known
+                    for its large size and appearance.
                 </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</div>
 
 
-    <!-- ================= SERVICES ================= -->
 
-    <section class="services" id="services">
+<!-- =====================================================
+     BUYING MODAL
+===================================================== -->
 
-        <p class="small-title">
-            OUR SERVICES
-        </p>
+<div class="modal" id="buyingModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn"
+                onclick="closeModal('buyingModal')">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            🛒
+        </div>
 
         <h2>
-            Everything You Need
+            Buying Goats
         </h2>
 
+        <p>
+            Before purchasing a goat, check its
+            overall condition and farm records.
+        </p>
 
-        <div class="service-cards">
+
+        <div class="steps">
 
 
-            <!-- SERVICE 1 -->
+            <div class="step">
 
-            <div class="service-card">
+                <span>01</span>
 
-                <div class="service-icon">
-                    🐐
+                <div>
+
+                    <h3>
+                        Check the Goat
+                    </h3>
+
+                    <p>
+                        Observe activity, body condition,
+                        eyes, coat and general appearance.
+                    </p>
+
                 </div>
 
+            </div>
+
+
+            <div class="step">
+
+                <span>02</span>
+
+                <div>
+
+                    <h3>
+                        Ask About History
+                    </h3>
+
+                    <p>
+                        Ask the seller about age,
+                        feeding and previous care.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>03</span>
+
+                <div>
+
+                    <h3>
+                        Check Records
+                    </h3>
+
+                    <p>
+                        Ask about vaccination and
+                        veterinary records where available.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>04</span>
+
+                <div>
+
+                    <h3>
+                        Get Expert Advice
+                    </h3>
+
+                    <p>
+                        For an important purchase,
+                        consult a qualified veterinarian.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     FEED & NUTRITION MODAL
+===================================================== -->
+
+<div class="modal" id="feedModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn"
+                onclick="closeModal('feedModal')">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            🌱
+        </div>
+
+        <h2>
+            Feed & Nutrition
+        </h2>
+
+        <p>
+            Good nutrition supports healthy growth
+            and farm productivity.
+        </p>
+
+
+        <div class="detail-grid">
+
+            <div class="detail-box">
+
                 <h3>
-                    Goat Breeds
+                    🌿 Green Fodder
                 </h3>
 
                 <p>
-                    Learn about different goat breeds
-                    and their characteristics.
+                    Suitable green fodder can be
+                    included according to the goats'
+                    nutritional needs.
                 </p>
 
             </div>
 
 
-            <!-- SERVICE 2 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🛒
-                </div>
+            <div class="detail-box">
 
                 <h3>
-                    Buying Goats
+                    🌾 Dry Fodder
                 </h3>
 
                 <p>
-                    Learn how to identify and select
-                    healthy goats.
+                    Good-quality dry fodder can
+                    form part of the daily diet.
                 </p>
 
             </div>
 
 
-            <!-- SERVICE 3 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🌱
-                </div>
+            <div class="detail-box">
 
                 <h3>
-                    Feed & Nutrition
+                    💧 Clean Water
                 </h3>
 
                 <p>
-                    Understand fodder, feed, minerals
-                    and clean water.
+                    Fresh, clean drinking water
+                    should always be available.
                 </p>
 
             </div>
 
 
-            <!-- SERVICE 4 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    ❤️
-                </div>
+            <div class="detail-box">
 
                 <h3>
-                    Health Care
+                    🧂 Minerals
                 </h3>
 
                 <p>
-                    Basic health monitoring, vaccination
-                    and veterinary care.
-                </p>
-
-            </div>
-
-
-            <!-- SERVICE 5 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🏠
-                </div>
-
-                <h3>
-                    Farm & Shed
-                </h3>
-
-                <p>
-                    Learn about shed design, cleanliness
-                    and ventilation.
-                </p>
-
-            </div>
-
-
-            <!-- SERVICE 6 -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    💰
-                </div>
-
-                <h3>
-                    Selling Goats
-                </h3>
-
-                <p>
-                    Learn about market preparation,
-                    customers and selling.
+                    Mineral requirements depend on
+                    age, production and diet.
                 </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</div>
 
 
-    <!-- ================= SELLING SECTION ================= -->
 
-    <section class="selling" id="selling">
+<!-- =====================================================
+     HEALTH MODAL
+===================================================== -->
 
-        <p class="small-title">
-            AVAILABLE GOATS
+<div class="modal" id="healthModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn"
+                onclick="closeModal('healthModal')">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            ❤️
+        </div>
+
+        <h2>
+            Goat Health Care
+        </h2>
+
+        <p>
+            Regular observation and professional
+            veterinary care are important for a
+            healthy herd.
         </p>
+
+
+        <div class="detail-grid">
+
+            <div class="detail-box">
+
+                <h3>
+                    👀 Daily Observation
+                </h3>
+
+                <p>
+                    Observe eating, drinking,
+                    movement and general behavior.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>
+                    💉 Vaccination
+                </h3>
+
+                <p>
+                    Follow a vaccination schedule
+                    recommended by a veterinarian.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>
+                    🩺 Veterinary Care
+                </h3>
+
+                <p>
+                    Contact a qualified veterinarian
+                    when a goat appears unwell.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>
+                    🧹 Clean Farm
+                </h3>
+
+                <p>
+                    Keep housing clean and dry
+                    to support good farm hygiene.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     FARM & SHED MODAL
+===================================================== -->
+
+<div class="modal" id="farmModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn"
+                onclick="closeModal('farmModal')">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            🏠
+        </div>
+
+        <h2>
+            Farm & Shed
+        </h2>
+
+        <p>
+            A suitable goat shed should provide
+            protection, cleanliness and good airflow.
+        </p>
+
+
+        <div class="detail-grid">
+
+            <div class="detail-box">
+
+                <h3>
+                    🏠 Shed
+                </h3>
+
+                <p>
+                    Provide enough space for the
+                    animals and easy farm management.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>
+                    🌬️ Ventilation
+                </h3>
+
+                <p>
+                    Good airflow helps maintain
+                    a comfortable environment.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>
+                    🧹 Cleanliness
+                </h3>
+
+                <p>
+                    Regular cleaning helps maintain
+                    good hygiene in the shed.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>
+                    ☀️ Dry Environment
+                </h3>
+
+                <p>
+                    Keep resting areas reasonably
+                    dry and protected from weather.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     SELLING MODAL
+===================================================== -->
+
+<div class="modal" id="sellingModal">
+
+    <div class="modal-content selling-modal">
+
+        <button class="close-btn"
+                onclick="closeModal('sellingModal')">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            💰
+        </div>
 
         <h2>
             Goats For Sale 🐐
         </h2>
 
-        <p class="selling-intro">
-            Healthy goats available for sale.
-            Contact us for current availability and details.
+        <p>
+            Touch a goat below to see its complete
+            details.
         </p>
 
 
-        <div class="selling-cards">
+        <div class="goat-list">
 
 
             <!-- GOAT 1 -->
 
-            <div class="selling-card">
+            <details class="goat-card">
 
-                <img src="images/goat1.jpg"
-                     alt="Healthy male goat">
+                <summary>
 
-                <div class="selling-details">
+                    <div class="goat-image">
+
+                        <img src="images/goat1.jpg"
+                             alt="Healthy Male Goat">
+
+                    </div>
+
+                    <div class="goat-short">
+
+                        <h3>
+                            Healthy Male Goat
+                        </h3>
+
+                        <p>
+                            Osmanabadi
+                        </p>
+
+                        <span>
+                            Touch for details →
+                        </span>
+
+                    </div>
+
+                </summary>
+
+
+                <div class="goat-details">
 
                     <h3>
-                        Healthy Male Goat
+                        🐐 Healthy Male Goat
                     </h3>
 
                     <p>
@@ -336,9 +931,130 @@
                         35 kg
                     </p>
 
+                    <p>
+                        <strong>Health:</strong>
+                        Healthy
+                    </p>
+
                     <h4>
                         Price: ₹25,000
                     </h4>
 
                     <a href="https://wa.me/919860455079"
-                       target
+                       target="_blank"
+                       class="whatsapp-btn">
+
+                        💬 Enquire on WhatsApp
+
+                    </a>
+
+                </div>
+
+            </details>
+
+
+
+            <!-- GOAT 2 -->
+
+            <details class="goat-card">
+
+                <summary>
+
+                    <div class="goat-image">
+
+                        <img src="images/goat2.jpg"
+                             alt="Healthy Female Goat">
+
+                    </div>
+
+                    <div class="goat-short">
+
+                        <h3>
+                            Healthy Female Goat
+                        </h3>
+
+                        <p>
+                            Osmanabadi
+                        </p>
+
+                        <span>
+                            Touch for details →
+                        </span>
+
+                    </div>
+
+                </summary>
+
+
+                <div class="goat-details">
+
+                    <h3>
+                        🐐 Healthy Female Goat
+                    </h3>
+
+                    <p>
+                        <strong>Breed:</strong>
+                        Osmanabadi
+                    </p>
+
+                    <p>
+                        <strong>Age:</strong>
+                        10 Months
+                    </p>
+
+                    <p>
+                        <strong>Weight:</strong>
+                        30 kg
+                    </p>
+
+                    <p>
+                        <strong>Health:</strong>
+                        Healthy
+                    </p>
+
+                    <h4>
+                        Price: ₹22,000
+                    </h4>
+
+                    <a href="https://wa.me/919860455079"
+                       target="_blank"
+                       class="whatsapp-btn">
+
+                        💬 Enquire on WhatsApp
+
+                    </a>
+
+                </div>
+
+            </details>
+
+
+
+            <!-- GOAT 3 -->
+
+            <details class="goat-card">
+
+                <summary>
+
+                    <div class="goat-image">
+
+                        <img src="images/goat3.jpg"
+                             alt="Quality Male Goat">
+
+                    </div>
+
+                    <div class="goat-short">
+
+                        <h3>
+                            Quality Male Goat
+                        </h3>
+
+                        <p>
+                            Beetal
+                        </p>
+
+                        <span>
+                            Touch for details →
+                        </span>
+
+                    </
