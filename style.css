@@ -1314,3 +1314,182 @@ footer p {
     }
 
 }
+
+
+
+/* ================= CONTACT DETAILS ================= */
+
+.contact {
+    background: #eaf7df;
+    text-align: center;
+    padding: 90px 7%;
+}
+
+.contact h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    font-size: 18px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.contact-box {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.10);
+
+    transition: 0.4s;
+
+    animation: contactAppear 0.8s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    font-size: 48px;
+
+    margin-bottom: 12px;
+
+    animation: contactIcon 2.5s ease-in-out infinite;
+}
+
+.contact-box h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 15px;
+
+    color: #555;
+
+    margin-bottom: 15px;
+
+    word-break: break-word;
+}
+
+
+/* CONTACT BUTTONS */
+
+.contact-btn,
+.contact-whatsapp {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    border-radius: 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contact-btn {
+    background: #4d8b45;
+}
+
+.contact-whatsapp {
+    background: #25d366;
+}
+
+.contact-btn:hover,
+.contact-whatsapp:hover {
+    transform: scale(1.08);
+}
+
+
+/* ANIMATION */
+
+@keyframes contactAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes contactIcon {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================= MOBILE CONTACT ================= */
+
+@media (max-width: 1000px) {
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 70px 5%;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        padding: 28px 18px;
+    }
+
+    .contact-btn,
+    .contact-whatsapp {
+        width: 100%;
+    }
+
+}
