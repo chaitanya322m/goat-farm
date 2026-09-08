@@ -153,6 +153,111 @@
 
     </section>
 
+    /* ===== SELLING SECTION ===== */
+
+.selling {
+    padding: 100px 7%;
+    text-align: center;
+    background: #f5f7f2;
+}
+
+.selling h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.selling-intro {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.selling-cards {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.selling-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
+    transition: 0.4s;
+}
+
+.selling-card:hover {
+    transform: translateY(-10px);
+}
+
+.selling-card img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.selling-details {
+    padding: 25px;
+    text-align: left;
+}
+
+.selling-details h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.selling-details p {
+    margin: 8px 0;
+}
+
+.selling-details h4 {
+    font-size: 20px;
+    margin: 18px 0;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    border-radius: 25px;
+
+    background: #4d8b3d;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .selling-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .selling h2 {
+        font-size: 32px;
+    }
+
+}
+
 
     <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
